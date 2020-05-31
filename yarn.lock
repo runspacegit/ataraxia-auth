@@ -967,6 +967,11 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
+git-cz@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/git-cz/-/git-cz-4.6.2.tgz#ae3d02d88c2032e6ba3af6467dc08ae0cc4305bc"
+  integrity sha512-SDLLWmMmAkG33bqAMp5idrr9gbpduyaJ7JjRzC34HPpQ7UGRgG13C5hqc0S7bOTISQu0j8vD3CrK7cyCU99iFA==
+
 glob-parent@^5.0.0, glob-parent@~5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
