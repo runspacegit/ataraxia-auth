@@ -24,7 +24,7 @@ export class RunSpaceAuth implements AuthProvider {
             async initialMessage(): Promise<ArrayBuffer> {
                 const randomData = crypto.randomBytes(16);
                 const signed = jwt.sign(randomData.toString('ascii'), key);
-                return toArrayBuffer(new Buffer(JSON.stringify({ signed, randomData: randomData.toString('ascii') })))
+                return toArrayBuffer(Buffer.from(JSON.stringify({ signed, randomData: randomData.toString('ascii') }), 'ascii'))
             },
 
             receiveData() {
